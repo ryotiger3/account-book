@@ -1,0 +1,15 @@
+<h1>今日までの出費</h1>
+ <table>
+  <head>
+    <tr>
+     <div>出費金額</div>
+    </tr>
+  </head>
+  <body>
+   <% @expenses.each do |expense| %>
+    <tr>
+      <td><%= expense.price %></td>
+    </tr>
+  <% end %>
+  </body>
+ </table>
